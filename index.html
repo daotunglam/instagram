@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram (Lam)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/792b9e6aab.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="toolbar row-between">
+            <img class="logo_img" src="img/1024px-Instagram_logo.svg.png">
+            <div class="searchbar">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search" placeholder="search" onkeyup="search()">
+            </div>
+            <div class="functionSites">
+                <i class="demo fas fa-home"><span class="tooltiptext">demo</span></i>
+                <i class="demo far fa-paper-plane"><span class="tooltiptext">demo</span></i>
+                <i class="demo far fa-compass"><span class="tooltiptext">demo</span></i>
+                <i class="demo far fa-heart"><span class="tooltiptext">demo</span></i>
+                <img class="demo profileImg" src="img/profileImg/Lam90namdinh.jpg">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainContent">
+            <div id="socialBox">
+                <div id="stories"></div>
+                <div id="posts"></div>
+            </div>
+            <div id="personalBox">
+                <div class="profile row-between">
+                    <div id="myProfile" class="user"></div>
+                    <span class="editButton">wechseln</span>
+                </div>
+                <div id="followRecommendations"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContent"></div>
+    </footer>
+
+    <div class="onTopButton" onclick="onTop()">
+        <img src="img/icon/arrow-up.svg" alt="">
+    </div>
+</body>
+
+</html>
